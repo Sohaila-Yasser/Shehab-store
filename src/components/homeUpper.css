@@ -1,0 +1,84 @@
+.upper-home {
+  width: 100%;
+  height: 27rem;
+  margin-top: 5rem;
+  padding-top: 5rem;
+  display: flex;
+  gap: 11rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.upperhome-image {
+  width: 24rem;
+  height: 24rem;
+  border-radius: 50%;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  z-index: 1;
+  position: relative;
+  object-fit: cover;
+}
+
+.upperhome-zone {
+  width: 26rem;
+  height: 26rem;
+  background-color: white;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  position: relative;
+  z-index: 0;
+  --b: 12rem;
+  z-index: 1;
+
+}
+
+.upperhome-zone:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: var(--c, linear-gradient(to right, #ffa500, #9c20aa, blue));
+  padding: var(--b);
+  border-radius: 50%;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.upperhome-button {
+  color: white;
+  background-color: blueviolet;
+  border: none;
+  border-radius: 4px;
+  width: 8rem;
+  height: 3rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin-left: 0.4rem;
+}
+.title-upper {
+  font-size: 6rem;
+  font-weight: 500;
+}
+
+.the-best {
+  display: block;
+}
+.circle {
+  width: 130px;
+  height: 130px;
+  background-color: #ffa500;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  border: 3px solid white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin-top: -7rem;
+  z-index: 10;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+}

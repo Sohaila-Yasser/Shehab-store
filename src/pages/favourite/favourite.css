@@ -1,0 +1,56 @@
+.favourite-page {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-bottom: 4rem;
+  min-height: auto;
+}
+.fav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.remove-fav {
+  color: white;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  margin-top: -16rem;
+  margin-left: 5rem;
+  z-index: 10;
+}
+
+.edit:after {
+  content: "\A";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+.edit:hover:after {
+  opacity: 1;
+}
+.edit {
+  padding-top: 1rem;
+  position: relative;
+  background: white;
+  width: 16rem;
+  height: 16rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.fav-image {
+  width: 13rem;
+  height: 13rem;
+}

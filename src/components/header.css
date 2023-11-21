@@ -1,0 +1,74 @@
+.upper-header,
+.lower-header {
+  width: 100%;
+  background-color: white;
+  color: black;
+}
+.upper-header {
+  height: 1.5rem;
+  text-align: center;
+  padding-left: 33rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.lower-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 45rem;
+  align-items: center;
+  height: 3rem;
+  padding-left: 4rem;
+  padding-bottom: 4rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.each-link {
+  color: black;
+}
+
+.header-items {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid rgba(209, 205, 209, 1);
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.each-link:hover {
+  text-decoration: none;
+}
+.part {
+  color: #ffa500;
+}
+.half-title {
+  color: #ffa500;
+}
+.cart-badge {
+  background-color: #ffa500;
+  width: 1.2rem;
+  height: 1.2rem;
+  color: white;
+  text-align: center;
+  align-items: center;
+  margin-top: -3rem;
+  margin-left: 1rem;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.number {
+  font-size: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

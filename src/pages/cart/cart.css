@@ -1,0 +1,95 @@
+.cart-title {
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+}
+
+.cart-items-form {
+  margin-left: 3rem;
+  display: block;
+  padding-bottom: 4rem;
+}
+
+.buy-button {
+  margin-left: 70rem;
+  margin-top: 3rem;
+  background-color: #ffa500;
+  width: 8rem;
+  height: 2.8rem;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  opacity: 0.7;
+}
+
+.buy-button:hover {
+  opacity: 1;
+}
+.justify {
+  margin-bottom: 3rem;
+  padding-left: 2rem;
+  padding-top: 2em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4rem;
+  width: 60%;
+  height: 18rem;
+  background-color: white;
+  box-shadow:
+    0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.remove {
+  background-color: #ffa500;
+  width: 6rem;
+  height: 2.8rem;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  margin-left: 21rem;
+}
+
+.quantity {
+  display: flex;
+  margin-top: 2rem;
+}
+.input-quantity {
+  width: 2.5rem;
+  height: 2rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.plus,
+.minus {
+  background-color: purple;
+  color: white;
+  height: 2rem;
+  width: 2rem;
+  border: none;
+}
+.all-buttons {
+  display: flex;
+  margin-top: 4rem;
+}
+.cart-image {
+  width: 14rem;
+  height: 14rem;
+}
+.buy {
+  background-color: #ffa500;
+  width: 8rem;
+  height: 2.8rem;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  font-size: 1.7rem;
+  margin-left: 70rem;
+}
+
+.total-price {
+  margin-left: 69rem;
+  font-size: 1.3rem;
+}
