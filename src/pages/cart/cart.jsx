@@ -68,11 +68,26 @@ export const Cart = () => {
     }
   };
 
+  const emptyCart = () => {
+    for (let product of Products) {
+      if (cartItems[product.id] !== 0) {
+        return (
+          <h2 className="cart-title">
+            <b>Your cart items</b>
+          </h2>
+        );
+      }
+    }
+    return (
+      <h2 className="cart-title">
+        <b>Your cart is empty</b>
+      </h2>
+    );
+  };
+
   return (
     <div className="cart-items-form">
-      <h2 className="cart-title">
-        <b>Your cart items</b>
-      </h2>
+      {emptyCart()}
       <div className="cart">
         {Products.map((product) => {
           if (cartItems[product.id] !== 0) {

@@ -16,9 +16,26 @@ export const Favourite = () => {
     setIsVisible("");
   };
 
+  const emptyFav = () => {
+    for (let product of Products) {
+      if (favItems[product.id] !== 0) {
+        return (
+          <h2 className="cart-title">
+            <b>Your Favourite items</b>
+          </h2>
+        );
+      }
+    }
+    return (
+      <h2 className="cart-title">
+        <b>No favourite items are selected</b>
+      </h2>
+    );
+  };
+
   return (
     <div className="favourite-page">
-      <h2><b>Your favorites</b></h2>
+      {emptyFav()}
       <div className="fav">
         {Products.map((product) => {
           if (favItems[product.id] !== 0) {
